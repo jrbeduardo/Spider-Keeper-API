@@ -1,6 +1,6 @@
 # Python-SpiderKeeper-API
 
-Instalar SpiderKepper del repositorio con el siguiente comando:
+Instalar SpiderKepper del repositorio [jrbeduardo/SpiderKeeper](https://github.com/jrbeduardo/SpiderKeeper.git) con el siguiente comando:
 
 ~~~
 pip install git+https://github.com/jrbeduardo/SpiderKeeper.git
