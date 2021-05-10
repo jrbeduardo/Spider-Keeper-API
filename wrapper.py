@@ -250,8 +250,7 @@ class SKeeperAPI(object):
             msg = 'status is invalid'
             raise ValueError(msg)
 
-
-    def stop_job(self, project_id, job_exec_id):
+    def stop_job(self, project_id, job_exec_id, signal='KILL'):
         """
         Cancela un trabajo de un especifico projecto.
          Args:
@@ -262,6 +261,9 @@ class SKeeperAPI(object):
             'project_id': project_id, 
             'job_exec_id': job_exec_id
         }
+        post_data = {
+            'signal': signal
+        }
         url = self._build_url(constants.STOP_JOB).format_map(params)
-        result = self.client.put(url, timeout=self.timeout)
+        result = self.client.put(url, data=post_data, timeout=self.timeout)
         return result
