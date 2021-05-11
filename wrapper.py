@@ -4,9 +4,9 @@ from copy import deepcopy
 
 from crontab import CronSlices
 
-import constants
-from  client import Client
-from compat import (
+from . import constants
+from  .client import Client
+from .compat import (
     iteritems,
     urljoin
 )
