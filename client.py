@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from requests import Session
 
-from exceptions import SpiderKeeperResponseError
+from .exceptions import SpiderKeeperResponseError
 
 """
 El objeto Session, permite mantener ciertos parámetros a través 
